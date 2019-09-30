@@ -14,6 +14,15 @@ h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+nav{
+    margin-bottom: 20px;
+}
+
+#head{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
 .main {
     width: 960px;
     clear:both;
@@ -30,12 +39,12 @@ h1{
     float: left;
     background: #4aaaa5;
     color:#ffffff;
-    padding:5px;
-    position:absolute;
+    padding:10px;
     bottom:0;
+    margin-right: 40%;
 }
 
-.header{
+/* .header{
     background: #ffffff;
     position:relative;
     padding:40px;
@@ -43,28 +52,13 @@ h1{
     margin-bottom:20px;
     border-color:#ccc;
     width:100%;
-}
+} */
 
-.links{
+/* .links{
     position:relative;
     left:66%;
     width:300px;
-}
-
-#link1{
-    padding:10px;
-    float:left;
-}
-
-#link2{
-    padding:10px;
-    float:left;
-}
-
-#link3{
-    padding:10px;
-    float:left;
-}
+} */
 
 #main{
     color:#4aaaa5;
@@ -105,7 +99,6 @@ footer {
     background: #4aaaa5;
     color:#ffffff;
     padding:5px;
-    position:absolute;
     padding:10px;
     width:180px;
     bottom:0;
