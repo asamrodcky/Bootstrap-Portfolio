@@ -64,18 +64,20 @@ background color, font color, padding, and margins for placement inside head div
 remains at the bottom of the webpage not matter the size or content of the page */
 /* NEEDS TO BE AMENDED FOR STICKY FOOTER */
 #footer{
+    clear:both;
     position: relative;
     bottom: 0;
     width:100%;
     left:0;
     right:0;
-    clear:both;
     text-align: center;
     background: #666666;
     border-top: 8px solid #4aaaa5;
     padding: 20px;
 }
 
+/* For the contact page, ensures that form inputs take up the entirety of the
+div they sit in */
 .form{
     width:100%;
 }
