@@ -21,6 +21,7 @@ h1{
     background-color: #ffffff;
     margin-bottom: 20px;
     border-color:#ccc;
+    min-width: 960px;
 }
 
 /* Entire name div, floats left for the nav bar to take up rest of space,
@@ -33,6 +34,10 @@ background color, font color, padding, and margins for placement inside head div
     bottom:0;
     margin-left: 20px;
     margin-right: 45%;
+}
+
+.nav{
+    float: right;
 }
 
 
@@ -74,6 +79,7 @@ remains at the bottom of the webpage not matter the size or content of the page 
     background: #666666;
     border-top: 8px solid #4aaaa5;
     padding: 20px;
+    min-width: 960px;
 }
 
 /* For the contact page, ensures that form inputs take up the entirety of the
@@ -96,6 +102,7 @@ div they sit in */
     width:180px;
     bottom:0;
     left:10px;
+    position: absolute;
 }
 
 #port{
