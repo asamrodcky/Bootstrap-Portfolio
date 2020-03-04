@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,79 +10,94 @@
 
     <!-- Resetting CSS before adding style elements -->
     <link rel="stylesheet" type="text/css" href="assets/css/clear.css">
-    
+
     <!-- Linking Bootstrap CSS  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Linking style CSS  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="./portfolio.js"></script>
+
 </head>
+
 <body>
 
-    <!-- Grid Layout -->
-    <div class="container">
+    <!-- First Row/Header  -->
+    <div class="row" id="head">
+        <div class="col-lg-12">
 
-       <!-- First Row/Header  -->
-        <div class="row" id="head">
-            <div class="col-lg-12">
+            <!-- Div for the name class  -->
+            <div class="name">
+                <h1>Samuel Rodriguez</h1>
+            </div>
 
-        <!-- Div for the name class  -->
-        <div class="name">
-            <h1>Samuel Rodriguez</h1>
-        </div>
-
-        <!-- Nav bar div  -->
-        <div class="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
+            <!-- Nav bar div  -->
+            <div class="nav">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        </nav>
-        </div>
-        </div>
-
+    </div>
+    <!-- Grid Layout -->
+    <div class="container">
         <!-- Second Row/Content  -->
-        <div class= "row">
+        <div class="row">
             <div class="main">
+
                 <!-- Row 1 of Portfolio  -->
                 <div class="row">
-
-                    <!-- First app  -->
-                    <div class="port">
-                        <p class= "porttext">Word Guess</p>
-
-                        <div class="portimage">
-                            <img src="http://lorempixel.com/400/200" class="image">
+                    <!-- First app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Word Guess Game</h5>
+                            <a href="https://github.com/asamrodcky/Word-Guess-Game" class="btn btn-primary">Repo</a>
                         </div>
                     </div>
 
-                    <!-- Second app  -->
-                    <div class="port">
-                        <p class= "porttext">RPG Game</p>
-
-                        <div class="portimage">
-                            <img src="http://lorempixel.com/400/200/sports/1/Dummy-Text" class="image">
+                    <!-- Second app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Crystal Collector Game</h5>
+                            <a href="https://github.com/asamrodcky/unit-4-game" class="btn btn-primary">Repo</a>
                         </div>
                     </div>
 
                     <!-- Third app -->
-                    <div class="port">
-                        <p class= "porttext">Trivia Game</p>
-
-                        <div class="portimage">
-                            <img src="http://lorempixel.com/400/200/sports" class="image">
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Trivia Game</h5>
+                            <a href="https://github.com/asamrodcky/TriviaGame" class="btn btn-primary">Repo</a>
                         </div>
                     </div>
 
@@ -90,37 +106,121 @@
                 <!-- Row 2 of Portfolio  -->
                 <div class="row">
 
-                    <!-- Fourth app  -->
-                    <div class="port">
-                        <p class= "porttext">Cornell Info Widget</p>
-
-                        <div class="portimage">
-                            <img src="http://lorempixel.com/400/200/sports/1" class="image">
+                    <!-- Fourth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Giftastic</h5>
+                            <a href="https://github.com/asamrodcky/GifTastic" class="btn btn-primary">Repo</a>
                         </div>
                     </div>
 
-                    <!-- Fifth app  -->
-                    <div class="port">
-                        <p class= "porttext">Rock Paper Scissors</p>
-
-                        <div class="portimage">
-                            <img src="http://lorempixel.com/400/200/sports/Dummy-Text" class="image">
+                    <!-- Fifth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Train Scheduler</h5>
+                            <a href="https://github.com/asamrodcky/TrainScheduler" class="btn btn-primary">Repo</a>
                         </div>
                     </div>
-                    
+
+                    <!-- Sixth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Underthink.io</h5>
+                            <a href="https://github.com/achatmajian/Underthink.io" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Row 3 of Portfolio  -->
+                <div class="row">
+
+                    <!-- Seventh app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Liri Bot</h5>
+                            <a href="https://github.com/asamrodcky/liri-node-app" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Eighth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bamazon Storefront</h5>
+                            <a href="https://github.com/asamrodcky/Bamazon" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Ninth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Friend Finder</h5>
+                            <a href="https://github.com/asamrodcky/FriendFinder" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Row 4 of Portfolio  -->
+                <div class="row">
+
+                    <!-- Tenth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger Munch App</h5>
+                            <a href="#" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Eleventh app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallerye</h5>
+                            <a href="https://github.com/asamrodcky/burger" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                    <!-- Twelfth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mongo News Scraper</h5>
+                            <a href="https://github.com/asamrodcky/MongoScraper" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 5 of Portfolio  -->
+                <div class="row">
+
+                    <!-- Thirtheenth app -->
+                    <div class="card" style="width: 15rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Clicky Game</h5>
+                            <a href="https://github.com/asamrodcky/ClickyGame" class="btn btn-primary">Repo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Third Row/Footer  -->
-        <div class="row" id="footer">
-            <div class="col-lg-12">
-                <div class="footer">
-                    <footer class="footer">Copyright&copy;</footer>
-                </div>
+    </div>
+    <!-- Third Row/Footer  -->
+    <div class="row" id="footer">
+        <div class="col-lg-12">
+            <div class="footer">
+                <footer class="footer">Copyright&copy;</footer>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
